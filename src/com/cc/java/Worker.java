@@ -6,4 +6,5 @@ public class Worker extends HoneyBee{
         return "I'm a worker, I work all day!";
     }
 
+
 }

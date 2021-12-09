@@ -1,10 +1,13 @@
 package com.cc.java;
 public class App {
+
+    // static Honeybee worker;
+
     public static void main(String[] args) {
       
-    Worker worker = new Worker();
-    Queen queen = new Queen();
-    Drone drone = new Drone();
+    HoneyBee worker = new Worker();
+    HoneyBee queen = new Queen();
+    HoneyBee drone = new Drone();
 
     ausgabe(worker.doYourJob());
     ausgabe(queen.doYourJob());
@@ -16,6 +19,11 @@ public class App {
     ausgabe(queen.fly());
     ausgabe(drone.fly());
 
+    ausgabe("------aber: ---------");
+
+    // Das sollte eigentlich nicht gehen!
+    HoneyBee bee = new HoneyBee();
+    ausgabe(bee.doYourJob());
   
     }
 
